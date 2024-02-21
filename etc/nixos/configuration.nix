@@ -20,7 +20,6 @@ in
   };
 
   programs.fish.enable = true;
-  users.users.hans.shell = pkgs.fish;
 
   # Bootloader.
   boot.loader.grub.enable = true;
@@ -102,7 +101,8 @@ in
   users.users.hans = {
     isNormalUser = true;
     description = "Hans";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "vboxsf" ];
+    shell = pkgs.fish;
     packages = with pkgs; [
       firefox
     #  thunderbird
