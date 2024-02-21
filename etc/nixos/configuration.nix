@@ -16,7 +16,11 @@ in
 
   home-manager.users.hans = {
     home.stateVersion = "23.11";
+    programs.fish.enable = true;
   };
+
+  programs.fish.enable = true;
+  users.users.hans.shell = pkgs.fish;
 
   # Bootloader.
   boot.loader.grub.enable = true;
