@@ -1,2 +1,3 @@
 # .dotfiles
-# .dotfiles
+
+`sudo bash bootstrap.sh`
