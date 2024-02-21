@@ -132,6 +132,7 @@ in
       keepassxc
       slack
       git
+      gh
     ];
   };
 
