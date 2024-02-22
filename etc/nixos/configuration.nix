@@ -177,6 +177,7 @@ in
       git
       gh
       azure-functions-core-tools
+      commitizen
     ];
   };
 
