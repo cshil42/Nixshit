@@ -178,6 +178,8 @@ in
       gh
       azure-functions-core-tools
       commitizen
+      azure-cli
+      terraform
     ];
   };
 
