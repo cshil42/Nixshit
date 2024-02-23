@@ -24,6 +24,8 @@ in
       settings = {
         "org/gnome/desktop/interface".color-scheme = "prefer-dark";
 
+        "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";
+        
         "org/gnome/desktop/wm/keybindings" = {
           move-to-workspace-1 = [ "<Shift><Alt>1" ];
           move-to-workspace-2 = [ "<Shift><Alt>2" ];
