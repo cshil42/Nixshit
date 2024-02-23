@@ -1,7 +1,7 @@
 # .dotfiles
 
 ```bash
-nix-shell -p git gh --command "gh auth login; gh repo clone aedans/.dotfiles"
+nix-shell -p git --command "git clone https://github.com/aedans/.dotfiles.git"
 cd .dotfiles
 sudo bash ./bootstrap.sh
 ```
