@@ -182,6 +182,7 @@ in
       commitizen
       azure-cli
       terraform
+      python3
     ];
   };
 
