@@ -183,6 +183,7 @@ in
       azure-cli
       terraform
       python3
+      teams-for-linux
     ];
   };
 
