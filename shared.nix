@@ -127,7 +127,7 @@ in
   users.users.hans = {
     isNormalUser = true;
     description = "Hans";
-    extraGroups = [ "networkmanager" "wheel" "vboxsf" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.fish;
     packages = with pkgs; [
       firefox
