@@ -9,6 +9,8 @@ in
       (import "${home-manager}/nixos")
     ];
 
+  nix.settings.experimental-features = [ "flakes" "nix-command" ];
+  
   home-manager.users.hans = {
     home.stateVersion = "23.11";
     programs.fish.enable = true;
@@ -145,6 +147,7 @@ in
       python3
       teams-for-linux
       lutris
+      gnome3.gnome-tweaks
     ];
   };
 
