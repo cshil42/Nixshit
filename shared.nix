@@ -148,6 +148,7 @@ in
       teams-for-linux
       lutris
       gnome3.gnome-tweaks
+      prismlauncher
     ];
   };
 
