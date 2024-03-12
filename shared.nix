@@ -9,7 +9,7 @@ in
       (import "${home-manager}/nixos")
     ];
 
-  nix.settings.experimental-features = [ "flakes" "nix-command" ]; 
+  nix.settings.experimental-features = [ "flakes" "nix-command" ];
   
   home-manager.users.hans = {
     home.stateVersion = "23.11";
@@ -92,8 +92,7 @@ in
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-  programs.hyprland.enable = true;
-  
+
   # Enable OpenGL
   hardware.opengl = {
     enable = true;
@@ -160,7 +159,6 @@ in
       lutris
       gnome3.gnome-tweaks
       prismlauncher
-      kitty
     ];
   };
 

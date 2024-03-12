@@ -23,7 +23,6 @@ rm -f "/home/$(logname)/.config/autostart/144hz.sh"
 
 ln -s "$DIR/.config/autostart/144hz.desktop" "/home/$(logname)/.config/autostart/144hz.desktop" 
 ln -s "$DIR/.config/autostart/144hz.sh" "/home/$(logname)/.config/autostart/144hz.sh"
-ln -s "$DIR/.config/hypr/hyprland.conf" "/home/$(logname)/.config/hypr/hyprland.conf"
 
 npm set prefix ~/.npm-global
 npm i -g @commitlint/config-conventional
