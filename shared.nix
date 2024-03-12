@@ -39,8 +39,8 @@ in
           "firefox.desktop"
           "org.gnome.Nautilus.desktop"
           "discord.desktop"
-          "codium.desktop"
           "slack.desktop"
+          "codium.desktop"
           "teams-for-linux.desktop"
           "steam.desktop"
         ];
