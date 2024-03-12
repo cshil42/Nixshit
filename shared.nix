@@ -34,6 +34,16 @@ in
           switch-to-workspace-3 = [ "<Alt>3" ];
           switch-to-workspace-4 = [ "<Alt>4" ];
         };
+
+        "org/gnome/shell".favorite-apps = [
+          "firefox.desktop"
+          "org.gnome.Nautilus.desktop"
+          "discord.desktop"
+          "codium.desktop"
+          "slack.desktop"
+          "teams-for-linux.desktop"
+          "steam.desktop"
+        ];
       };
     };
   };
