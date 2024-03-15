@@ -159,6 +159,7 @@ in
       lutris
       gnome3.gnome-tweaks
       prismlauncher
+      lynx
     ];
   };
 
