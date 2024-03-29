@@ -11,14 +11,14 @@ cd .dotfiles
 sudo bash bootstrap.sh grub
 ```
 
-## PC
+## Desktop
+
+```bash
+sudo bash bootstrap.sh systemd-boot nvidia backup
+```
+
+## Laptop
 
 ```bash
 sudo bash bootstrap.sh systemd-boot
-```
-
-## PC with NVIDIA
-
-```bash
-sudo bash bootstrap.sh systemd-boot nvidia
 ```

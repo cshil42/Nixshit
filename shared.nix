@@ -100,6 +100,8 @@ in
     driSupport32Bit = true;
   };
 
+  programs.nix-ld.enable = true;
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
@@ -160,6 +162,7 @@ in
       gnome3.gnome-tweaks
       prismlauncher
       lynx
+      jdk17
     ];
   };
 
@@ -178,6 +181,7 @@ in
     nodejs
     wineWowPackages.stable
     winetricks
+    rclone
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
