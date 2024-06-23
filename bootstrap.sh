@@ -27,9 +27,3 @@ ln -s "$DIR/.config/onedrive/config" "/home/$(logname)/.config/onedrive/config"
 
 npm set prefix ~/.npm-global
 npm i -g @commitlint/config-conventional
-
-if ! command -v onedrive &> /dev/null
-then
-  systemctl --user enable onedrive@onedrive.service
-  systemctl --user start onedrive@onedrive.service
-fi
