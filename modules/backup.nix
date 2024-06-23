@@ -1,4 +1,6 @@
 {
+  services.onedrive.enable = true;
+
   services.cron = {
     enable = true;
     systemCronJobs = [
