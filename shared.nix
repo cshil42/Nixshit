@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz";
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz";
 in
 {
   imports =
@@ -12,7 +12,7 @@ in
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
   
   home-manager.users.hans = {
-    home.stateVersion = "23.11";
+    home.stateVersion = "24.05";
     programs.fish.enable = true;
 
     dconf = {
@@ -112,9 +112,9 @@ in
   };
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Enable CUPS to print documents.
@@ -216,6 +216,6 @@ in
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "24.05"; # Did you read the comment?
 
 }
