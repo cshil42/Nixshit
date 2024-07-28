@@ -166,6 +166,7 @@ in
       prismlauncher
       lynx
       jdk17
+      jdk21
       libreoffice
     ];
   };
