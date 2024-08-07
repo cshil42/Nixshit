@@ -60,6 +60,8 @@ in
   # Enable networking
   networking.networkmanager.enable = true;
 
+  virtualisation.docker.enable = true;
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
@@ -144,7 +146,7 @@ in
   users.users.hans = {
     isNormalUser = true;
     description = "Hans";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.fish;
     packages = with pkgs; [
       firefox
@@ -176,7 +178,7 @@ in
   systemd.services."autovt@tty1".enable = false;
 
   system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = true;
+  # system.autoUpgrade.allowReboot = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
