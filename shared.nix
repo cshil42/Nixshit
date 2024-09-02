@@ -22,6 +22,17 @@ in
         "org/gnome/desktop/interface".color-scheme = "prefer-dark";
 
         "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";
+
+        "org/gnome/desktop/background" = {
+          picture-uri = "file:///home/hans/.dotfiles/.config/1x1_#000000FF.png";
+          picture-uri-dark = "file:///home/hans/.dotfiles/.config/1x1_#000000FF.png";
+          primary-color = "#000000";
+        };
+
+        "org/gnome/desktop/screensaver" = {
+          picture-uri = "file:///home/hans/.dotfiles/.config/1x1_#000000FF.png";
+          primary-color = "#000000";
+        };
         
         "org/gnome/desktop/wm/keybindings" = {
           move-to-workspace-1 = [ "<Shift><Alt>1" ];
