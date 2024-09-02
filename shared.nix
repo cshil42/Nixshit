@@ -62,6 +62,9 @@ in
 
   virtualisation.docker.enable = true;
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "hans" ];
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
