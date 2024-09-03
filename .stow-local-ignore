@@ -1,0 +1,5 @@
+^/nix
+^/.gitignore
+^/bootstrap.sh
+^/commit.sh
+^/README.md
