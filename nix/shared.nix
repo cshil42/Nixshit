@@ -11,6 +11,7 @@ in
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
   
+  home-manager.useGlobalPkgs = true;  
   home-manager.users.hans = {
     home.stateVersion = "24.05";
     programs.fish.enable = true;
@@ -56,6 +57,14 @@ in
           "steam.desktop"
         ];
       };
+    };
+
+    programs.vscode = {
+      enable = true;
+
+      extensions = (with pkgs.vscode-extensions; [
+        jnoortheen.nix-ide
+      ]);
     };
   };
 
@@ -165,7 +174,7 @@ in
     packages = with pkgs; [
       firefox
     #  thunderbird
-      vscodium
+      vscode
       discord
       keepassxc
       slack
