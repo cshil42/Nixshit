@@ -15,57 +15,7 @@ in
   home-manager.users.hans = {
     home.stateVersion = "24.05";
     programs.fish.enable = true;
-
-    dconf = {
-      enable = true;
-
-      settings = {
-        "org/gnome/desktop/interface".color-scheme = "prefer-dark";
-
-        "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";
-
-        "org/gnome/desktop/background" = {
-          picture-uri = "file:///home/hans/.dotfiles/.config/1x1_#000000FF.png";
-          picture-uri-dark = "file:///home/hans/.dotfiles/.config/1x1_#000000FF.png";
-          primary-color = "#000000";
-        };
-
-        "org/gnome/desktop/screensaver" = {
-          picture-uri = "file:///home/hans/.dotfiles/.config/1x1_#000000FF.png";
-          primary-color = "#000000";
-        };
-        
-        "org/gnome/desktop/wm/keybindings" = {
-          move-to-workspace-1 = [ "<Shift><Alt>1" ];
-          move-to-workspace-2 = [ "<Shift><Alt>2" ];
-          move-to-workspace-3 = [ "<Shift><Alt>3" ];
-          move-to-workspace-4 = [ "<Shift><Alt>4" ];
-
-          switch-to-workspace-1 = [ "<Alt>1" ];
-          switch-to-workspace-2 = [ "<Alt>2" ];
-          switch-to-workspace-3 = [ "<Alt>3" ];
-          switch-to-workspace-4 = [ "<Alt>4" ];
-        };
-
-        "org/gnome/shell".favorite-apps = [
-          "firefox.desktop"
-          "org.gnome.Nautilus.desktop"
-          "discord.desktop"
-          "slack.desktop"
-          "codium.desktop"
-          "teams-for-linux.desktop"
-          "steam.desktop"
-        ];
-      };
-    };
-
-    programs.vscode = {
-      enable = true;
-
-      extensions = (with pkgs.vscode-extensions; [
-        jnoortheen.nix-ide
-      ]);
-    };
+    programs.vscode.enable = true;
   };
 
   programs.fish.enable = true;

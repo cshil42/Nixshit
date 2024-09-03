@@ -1,5 +1,9 @@
+^/Colloid-gtk-theme
+^/dconf
 ^/nix
 ^/.gitignore
 ^/bootstrap.sh
 ^/commit.sh
+^/dconf.txt
+^/dumb-dconf.sh
 ^/README.md

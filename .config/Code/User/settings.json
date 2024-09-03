@@ -2,5 +2,7 @@
     "files.autoSave": "afterDelay",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "workbench.colorTheme": "Nord Deep"
 }
