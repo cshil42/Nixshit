@@ -138,6 +138,7 @@ in
       teams-for-linux
       lutris
       gnome3.gnome-tweaks
+      gnomeExtensions.just-perfection
       prismlauncher
       lynx
       jdk17
