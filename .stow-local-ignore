@@ -3,7 +3,6 @@
 ^/nix
 ^/.gitignore
 ^/bootstrap.sh
-^/commit.sh
 ^/dconf.txt
 ^/dump.sh
 ^/README.md
