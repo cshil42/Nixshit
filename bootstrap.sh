@@ -15,7 +15,7 @@ sudo sh -c "echo '$text' > /etc/nixos/configuration.nix"
 
 sudo nixos-rebuild switch
 
-nix-shell -p stow --command "stow ."
+nix-shell -p stow --command "stow . --no-folding"
 
 npm set prefix ~/.npm-global
 npm i -g @commitlint/config-conventional
