@@ -1,22 +1,11 @@
 { config, pkgs, ... }:
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz";
-in
 {
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
-      (import "${home-manager}/nixos")
     ];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
-  
-  home-manager.useGlobalPkgs = true;  
-  home-manager.users.hans = {
-    home.stateVersion = "24.05";
-    programs.fish.enable = true;
-    programs.vscode.enable = true;
-  };
 
   programs.fish.enable = true;
 
