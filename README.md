@@ -1,7 +1,7 @@
 # .dotfiles
 
 ```bash
-nix-shell -p git --command "git clone https://github.com/aedans/.dotfiles.git"
+nix-shell -p git --command "git clone --recurse-submodules https://github.com/aedans/.dotfiles.git"
 ```
 
 ## VirtualBox
