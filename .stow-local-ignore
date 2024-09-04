@@ -5,5 +5,5 @@
 ^/bootstrap.sh
 ^/commit.sh
 ^/dconf.txt
-^/dumb-dconf.sh
+^/dump.sh
 ^/README.md
