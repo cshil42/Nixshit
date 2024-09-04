@@ -1,2 +1,15 @@
+42crunch.vscode-openapi
+dbaeumer.vscode-eslint
+eamodio.gitlens
+editorconfig.editorconfig
+esbenp.prettier-vscode
+hashicorp.terraform
 jnoortheen.nix-ide
 marlosirapuan.nord-deep
+ms-azuretools.vscode-azureappservice
+ms-azuretools.vscode-azurefunctions
+ms-azuretools.vscode-azureresourcegroups
+ms-python.debugpy
+ms-python.python
+redhat.java
+redhat.vscode-yaml
