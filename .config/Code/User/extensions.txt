@@ -11,5 +11,6 @@ ms-azuretools.vscode-azurefunctions
 ms-azuretools.vscode-azureresourcegroups
 ms-python.debugpy
 ms-python.python
+ms-python.vscode-pylance
 redhat.java
 redhat.vscode-yaml
