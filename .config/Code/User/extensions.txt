@@ -1,4 +1,5 @@
 42crunch.vscode-openapi
+azurite.azurite
 dbaeumer.vscode-eslint
 eamodio.gitlens
 editorconfig.editorconfig
