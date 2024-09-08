@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -64,11 +64,6 @@
     driSupport32Bit = true;
   };
 
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    stdenv.cc.cc.lib
-  ];
-
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
@@ -130,10 +125,21 @@
       gnomeExtensions.just-perfection
       prismlauncher
       lynx
-      jdk17
       jdk21
       libreoffice
     ];
+  };
+
+  environment.sessionVariables = {
+    LD_LIBRARY_PATH = lib.makeLibraryPath [
+      pkgs.libglvnd
+      pkgs.pulseaudio
+    ];
+  };
+
+  programs.java = { 
+    enable = true; 
+    package = pkgs.jdk21;
   };
 
   # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229

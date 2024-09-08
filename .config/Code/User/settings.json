@@ -5,5 +5,7 @@
     "git.autofetch": true,
     "terminal.integrated.defaultProfile.linux": "fish",
     "workbench.colorTheme": "Nord Deep",
-    "git.openRepositoryInParentFolders": "always"
+    "git.openRepositoryInParentFolders": "always",
+    "java.import.gradle.java.home": "/nix/store/5zij17yckck93248rb2grkpm1y3dzy1f-openjdk-21.0.3+9/lib/openjdk",
+    "java.jdt.ls.java.home": "/nix/store/5zij17yckck93248rb2grkpm1y3dzy1f-openjdk-21.0.3+9/lib/openjdk"
 }
