@@ -1,3 +1,9 @@
 [user]
     name = Aedan Smith
     email = aedan.smith@outlook.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/etc/profiles/per-user/hans/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/etc/profiles/per-user/hans/bin/gh auth git-credential
