@@ -163,6 +163,13 @@
     rclone
   ];
 
+  services.cron = {
+    enable = true;
+    systemCronJobs = [
+      "0 0 * * *      root    nix-collect-garbage --delete-older-than 30d > /var/log/nix-collect-garbage.log 2>&1"
+    ];
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
