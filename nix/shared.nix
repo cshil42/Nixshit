@@ -123,6 +123,7 @@
       lutris
       gnome3.gnome-tweaks
       gnomeExtensions.just-perfection
+      gnomeExtensions.dash-to-dock
       prismlauncher
       lynx
       jdk21
