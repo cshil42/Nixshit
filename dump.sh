@@ -6,4 +6,4 @@ while read in; do
 done < /home/hans/.dotfiles/dconf.txt
 
 echo Dumping vscode extensions
-code --list-extensions > /home/hans/.dotfiles/.config/Code/User/extensions.txt
+code --list-extensions | tr '[:upper:]' '[:lower:]' > /home/hans/.dotfiles/.config/Code/User/extensions.txt
