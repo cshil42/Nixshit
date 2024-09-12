@@ -128,6 +128,7 @@
       lynx
       jdk21
       libreoffice
+      dolphin-emu
     ];
   };
 
