@@ -1,5 +1,6 @@
 ^/Colloid-gtk-theme
 ^/dconf
+^/Nordzy-icon
 ^/nix
 ^/.gitignore
 ^/bootstrap.sh
