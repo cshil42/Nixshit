@@ -57,6 +57,16 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-text-editor
+    gnome-tour
+    gnome-console
+  ]) ++ (with pkgs.gnome; [
+    epiphany    # web browser
+    geary       # email client
+    seahorse    # password manager
+  ]);
+
   # Enable OpenGL
   hardware.opengl = {
     enable = true;
@@ -121,6 +131,7 @@
       python3
       teams-for-linux
       lutris
+      gnome3.gnome-terminal
       gnome3.gnome-tweaks
       gnomeExtensions.just-perfection
       gnomeExtensions.dash-to-dock
