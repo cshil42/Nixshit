@@ -22,6 +22,8 @@ npm i -g @commitlint/config-conventional
 
 nix-shell -p sassc --command "bash ./Colloid-gtk-theme/install.sh --tweaks nord -l -c dark"
 
+bash ./Nordzy-icon/install.sh -c dark
+
 while read in; do
   echo Reading $in from /home/hans/.dotfiles/dconf/${in////-}.ini
   dconf load $in < /home/hans/.dotfiles/dconf/${in////-}.ini
