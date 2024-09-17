@@ -10,5 +10,24 @@
     "java.jdt.ls.java.home": "/nix/store/5zij17yckck93248rb2grkpm1y3dzy1f-openjdk-21.0.3+9/lib/openjdk",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        80
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "indentRainbow.indicatorStyle": "light",
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#88c0d0",
+        "editorBracketHighlight.foreground2": "#81a1c1",
+        "editorBracketHighlight.foreground3": "#5e81ac",
+        "editorBracketHighlight.foreground4": "#88c0d0",
+        "editorBracketHighlight.foreground5": "#81a1c1",
+        "editorBracketHighlight.foreground6": "#5e81ac",
+    },
+    "indentRainbow.colors": [
+        "rgba(136, 192, 208, .5)",
+        "rgba(129, 161, 193, .5)",
+        "rgba(94, 129, 172, .5)",
+    ],
 }
