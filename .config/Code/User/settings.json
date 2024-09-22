@@ -13,6 +13,7 @@
     },
     "editor.tabSize": 2,
     "editor.rulers": [
+        120,
         80
     ],
     "workbench.iconTheme": "material-icon-theme",
@@ -30,4 +31,9 @@
         "rgba(129, 161, 193, .5)",
         "rgba(94, 129, 172, .5)",
     ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
