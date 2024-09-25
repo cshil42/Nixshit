@@ -13,7 +13,8 @@
     },
     "editor.tabSize": 2,
     "editor.rulers": [
-        80
+        80,
+        120
     ],
     "workbench.iconTheme": "material-icon-theme",
     "indentRainbow.indicatorStyle": "light",
@@ -30,4 +31,5 @@
         "rgba(129, 161, 193, .5)",
         "rgba(94, 129, 172, .5)",
     ],
+    "typescript.updateImportsOnFileMove.enabled": "always",
 }
