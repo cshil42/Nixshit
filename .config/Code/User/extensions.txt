@@ -1,5 +1,6 @@
 42crunch.vscode-openapi
 azurite.azurite
+connor4312.esbuild-problem-matchers
 dbaeumer.vscode-eslint
 eamodio.gitlens
 editorconfig.editorconfig
@@ -13,6 +14,7 @@ ms-azuretools.vscode-azureresourcegroups
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
+ms-vscode.extension-test-runner
 oderwat.indent-rainbow
 pkief.material-icon-theme
 redhat.java
