@@ -2,7 +2,6 @@
 ^/Nordzy-icon
 ^/Future-cursors
 ^/nix
-^/.gitignore
 ^/bootstrap.sh
 ^/dump.sh
 ^/README.md
