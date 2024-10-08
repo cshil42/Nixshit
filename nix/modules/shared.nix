@@ -10,7 +10,6 @@
 
   programs.fish.enable = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -148,9 +147,9 @@
     dconf.enable = true;
 
     imports = [
-      ./dconf/-org-gnome-desktop-.nix
-      ./dconf/-org-gnome-mutter-.nix
-      ./dconf/-org-gnome-shell-.nix 
+      ../dconf/-org-gnome-desktop-.nix
+      ../dconf/-org-gnome-mutter-.nix
+      ../dconf/-org-gnome-shell-.nix 
     ];
     
     # The state version is required and should stay at the version you

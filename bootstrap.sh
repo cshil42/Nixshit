@@ -2,16 +2,13 @@
 
 set -e
 
+if [[ $# -eq 0 ]] ; then
+  echo 'usage: bash bootstrap.sh <config>'
+  exit 0
+fi
+
 sudo rm -f /etc/nixos/configuration.nix
-
-text="{
-  imports = [
-    /home/hans/.dotfiles/nix/shared.nix
-$(for i in "$@"; do echo "    /home/hans/.dotfiles/nix/modules/$i.nix"; done)
-  ];
-}"
-
-sudo sh -c "echo '$text' > /etc/nixos/configuration.nix"
+sudo ln -s /home/hans/.dotfiles/nix/$1.nix /etc/nixos/configuration.nix 
 
 sudo nixos-rebuild switch
 
