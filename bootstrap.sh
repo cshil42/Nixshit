@@ -21,8 +21,8 @@ npm set prefix ~/.npm-global
 npm i -g @commitlint/config-conventional
 
 nix-shell -p sassc --command "bash ./Colloid-gtk-theme/install.sh --tweaks nord -l -c dark"
-
-bash ./Nordzy-icon/install.sh -c dark
+(cd Nordzy-icon; bash install.sh -c dark)
+(cd Future-cursors; bash install.sh) 
 
 while read in; do
   echo Reading $in from /home/hans/.dotfiles/dconf/${in////-}.ini
