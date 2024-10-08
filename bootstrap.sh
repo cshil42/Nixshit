@@ -8,7 +8,7 @@ if [[ $# -eq 0 ]] ; then
 fi
 
 sudo rm -f /etc/nixos/configuration.nix
-sudo ln -s /home/hans/.dotfiles/nix/$1.nix /etc/nixos/configuration.nix 
+sudo ln -s /home/hans/.dotfiles/config/$1.nix /etc/nixos/configuration.nix 
 
 sudo nixos-rebuild switch
 

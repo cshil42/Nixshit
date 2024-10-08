@@ -147,9 +147,9 @@
     dconf.enable = true;
 
     imports = [
-      ../dconf/-org-gnome-desktop-.nix
-      ../dconf/-org-gnome-mutter-.nix
-      ../dconf/-org-gnome-shell-.nix 
+      ./dconf/-org-gnome-desktop-.nix
+      ./dconf/-org-gnome-mutter-.nix
+      ./dconf/-org-gnome-shell-.nix 
     ];
     
     # The state version is required and should stay at the version you

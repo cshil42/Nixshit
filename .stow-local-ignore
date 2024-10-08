@@ -2,6 +2,7 @@
 ^/Nordzy-icon
 ^/Future-cursors
 ^/nix
+^/config
 ^/.gitmodules
 ^/bootstrap.sh
 ^/dump.sh
