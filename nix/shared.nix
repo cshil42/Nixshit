@@ -3,6 +3,7 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
+      <home-manager/nixos> 
     ];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
@@ -141,6 +142,20 @@
       libreoffice
       dolphin-emu
     ];
+  };
+
+  home-manager.users.hans = { pkgs, ... }: {
+    dconf.enable = true;
+
+    imports = [
+      ./dconf/-org-gnome-desktop-.nix
+      ./dconf/-org-gnome-mutter-.nix
+      ./dconf/-org-gnome-shell-.nix 
+    ];
+    
+    # The state version is required and should stay at the version you
+    # originally installed.
+    home.stateVersion = "24.05";
   };
 
   environment.sessionVariables = {

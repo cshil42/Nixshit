@@ -25,11 +25,6 @@ nix-shell -p sassc --command "bash ./Colloid-gtk-theme/install.sh --tweaks nord 
 (cd Future-cursors; bash install.sh) 
 
 while read in; do
-  echo Reading $in from /home/hans/.dotfiles/dconf/${in////-}.ini
-  dconf load $in < /home/hans/.dotfiles/dconf/${in////-}.ini
-done < /home/hans/.dotfiles/dconf.txt
-
-while read in; do
   echo Installing vscode extension $in
   code --install-extension $in
 done < /home/hans/.dotfiles/.config/Code/User/extensions.txt
