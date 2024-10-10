@@ -135,6 +135,7 @@
       gnome3.gnome-tweaks
       gnomeExtensions.just-perfection
       gnomeExtensions.dash-to-dock
+      gnomeExtensions.astra-monitor
       prismlauncher
       lynx
       jdk21
@@ -164,6 +165,10 @@
     ];
   };
 
+  environment.variables = {
+    GI_TYPELIB_PATH = "/run/current-system/sw/lib/girepository-1.0";
+  };
+
   programs.java = { 
     enable = true; 
     package = pkgs.jdk21;
@@ -188,6 +193,10 @@
     wineWowPackages.stable
     winetricks
     rclone
+    libgtop
+    pciutils
+    wirelesstools
+    amdgpu_top
   ];
 
   nix.gc = {

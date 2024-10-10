@@ -65,7 +65,80 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
+      application-children = [ "org-gnome-console" "code" "firefox" "org-gnome-nautilus" "teams-for-linux" "discord" "dolphin-emu" "slack" "steam" "net-lutris-lutris" ];
       show-banners = true;
+    };
+
+    "org/gnome/desktop/notifications/application/code" = {
+      application-id = "code.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/codium" = {
+      application-id = "codium.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/discord" = {
+      application-id = "discord.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/dolphin-emu" = {
+      application-id = "dolphin-emu.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/firefox" = {
+      application-id = "firefox.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/gnome-power-panel" = {
+      application-id = "gnome-power-panel.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/gnome-system-monitor" = {
+      application-id = "gnome-system-monitor.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/net-lutris-lutris" = {
+      application-id = "net.lutris.Lutris.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-baobab" = {
+      application-id = "org.gnome.baobab.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-characters" = {
+      application-id = "org.gnome.Characters.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-console" = {
+      application-id = "org.gnome.Console.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-epiphany" = {
+      application-id = "org.gnome.Epiphany.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-nautilus" = {
+      application-id = "org.gnome.Nautilus.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-settings" = {
+      application-id = "org.gnome.Settings.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-prismlauncher-prismlauncher" = {
+      application-id = "org.prismlauncher.PrismLauncher.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/slack" = {
+      application-id = "slack.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/steam" = {
+      application-id = "steam.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/teams-for-linux" = {
+      application-id = "teams-for-linux.desktop";
     };
 
     "org/gnome/desktop/peripherals/keyboard" = {
