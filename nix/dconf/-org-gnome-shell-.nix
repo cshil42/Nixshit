@@ -8,7 +8,7 @@ with lib.hm.gvariant;
     "org/gnome/shell" = {
       disable-user-extensions = false;
       disabled-extensions = [ "system-monitor@gnome-shell-extensions.gcampax.github.com" "native-window-placement@gnome-shell-extensions.gcampax.github.com" "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" ];
-      enabled-extensions = [ "user-theme@gnome-shell-extensions.gcampax.github.com" "just-perfection-desktop@just-perfection" "dash-to-dock@micxgx.gmail.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "monitor@astraext.github.io" ];
+      enabled-extensions = [ "user-theme@gnome-shell-extensions.gcampax.github.com" "just-perfection-desktop@just-perfection" "dash-to-dock@micxgx.gmail.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "Vitals@CoreCoding.com" ];
       favorite-apps = [ "firefox.desktop" "org.gnome.Nautilus.desktop" "discord.desktop" "slack.desktop" "code.desktop" "teams-for-linux.desktop" "steam.desktop" ];
     };
 
@@ -66,13 +66,29 @@ with lib.hm.gvariant;
       alt-tab-icon-size = 0;
       alt-tab-small-icon-size = 0;
       alt-tab-window-preview-size = 0;
+      animation = 1;
+      controls-manager-spacing-size = 0;
+      dash-app-running = true;
+      panel = true;
       panel-in-overview = true;
+      panel-notification-icon = true;
+      power-icon = true;
+      show-apps-button = true;
       switcher-popup-delay = true;
+      theme = false;
+      window-picker-icon = true;
       workspace-popup = false;
+      workspace-switcher-should-show = false;
     };
 
     "org/gnome/shell/extensions/user-theme" = {
       name = "shell-Dark-Nord";
+    };
+
+    "org/gnome/shell/extensions/vitals" = {
+      show-fan = false;
+      show-voltage = false;
+      update-time = 1;
     };
 
     "org/gnome/shell/world-clocks" = {
