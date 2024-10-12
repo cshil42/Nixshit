@@ -30,8 +30,9 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/dash-to-dock" = {
       apply-custom-theme = false;
       apply-glossy-effect = false;
+      background-color = "rgb(32,36,44)";
       background-opacity = 1.0;
-      custom-background-color = false;
+      custom-background-color = true;
       custom-theme-customize-running-dots = false;
       custom-theme-shrink = false;
       dash-max-icon-size = 48;
@@ -46,7 +47,6 @@ with lib.hm.gvariant;
       isolate-workspaces = false;
       max-alpha = 0.8;
       preferred-monitor = -2;
-      preferred-monitor-by-connector = "eDP-1";
       preview-size-scale = 0.0;
       running-indicator-dominant-color = false;
       running-indicator-style = "DASHES";
