@@ -4,6 +4,7 @@
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
       <home-manager/nixos> 
+      ./de/gnome.nix
     ];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
@@ -48,24 +49,6 @@
     dataDir = "/home/hans/Sync";    # Default folder for new synced folders
     configDir = "/home/hans/.config/syncthing";   # Folder for Syncthing's settings and keys
   };
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.excludePackages = [ pkgs.xterm ];
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  environment.gnome.excludePackages = (with pkgs; [
-    gnome-text-editor
-    gnome-tour
-    gnome-console
-  ]) ++ (with pkgs.gnome; [
-    epiphany    # web browser
-    geary       # email client
-    seahorse    # password manager
-  ]);
 
   # Enable OpenGL
   hardware.opengl = {
@@ -131,11 +114,6 @@
       python3
       teams-for-linux
       lutris
-      gnome3.gnome-terminal
-      gnome3.gnome-tweaks
-      gnomeExtensions.just-perfection
-      gnomeExtensions.dash-to-dock
-      gnomeExtensions.vitals
       prismlauncher
       lynx
       jdk21
@@ -144,15 +122,7 @@
     ];
   };
 
-  home-manager.users.hans = { pkgs, ... }: {
-    dconf.enable = true;
-
-    imports = [
-      ./dconf/-org-gnome-desktop-.nix
-      ./dconf/-org-gnome-mutter-.nix
-      ./dconf/-org-gnome-shell-.nix 
-    ];
-    
+  home-manager.users.hans = {
     # The state version is required and should stay at the version you
     # originally installed.
     home.stateVersion = "24.05";
