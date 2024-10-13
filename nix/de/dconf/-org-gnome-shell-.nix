@@ -86,9 +86,11 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/vitals" = {
+      hot-sensors = [ "_processor_usage_" "_memory_allocated_" ];
       show-fan = false;
       show-voltage = false;
       update-time = 1;
+      use-higher-precision = true;
     };
 
     "org/gnome/shell/world-clocks" = {
