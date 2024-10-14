@@ -24,6 +24,7 @@
     gnomeExtensions.just-perfection
     gnomeExtensions.dash-to-dock
     gnomeExtensions.vitals
+    gnomeExtensions.appindicator
   ];
 
   home-manager.users.hans = {

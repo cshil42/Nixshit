@@ -7,13 +7,17 @@ with lib.hm.gvariant;
   dconf.settings = {
     "org/gnome/shell" = {
       disable-user-extensions = false;
-      disabled-extensions = [ "system-monitor@gnome-shell-extensions.gcampax.github.com" "native-window-placement@gnome-shell-extensions.gcampax.github.com" "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "blur-my-shell@aunetx" ];
-      enabled-extensions = [ "user-theme@gnome-shell-extensions.gcampax.github.com" "just-perfection-desktop@just-perfection" "dash-to-dock@micxgx.gmail.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "Vitals@CoreCoding.com" ];
+      disabled-extensions = [ "system-monitor@gnome-shell-extensions.gcampax.github.com" "native-window-placement@gnome-shell-extensions.gcampax.github.com" "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" ];
+      enabled-extensions = [ "user-theme@gnome-shell-extensions.gcampax.github.com" "just-perfection-desktop@just-perfection" "dash-to-dock@micxgx.gmail.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "Vitals@CoreCoding.com" "appindicatorsupport@rgcjonas.gmail.com" ];
       favorite-apps = [ "firefox.desktop" "org.gnome.Nautilus.desktop" "discord.desktop" "slack.desktop" "code.desktop" "teams-for-linux.desktop" "steam.desktop" ];
     };
 
     "org/gnome/shell/app-switcher" = {
       current-workspace-only = false;
+    };
+
+    "org/gnome/shell/extensions/appindicator" = {
+      tray-pos = "right";
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
@@ -87,6 +91,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/vitals" = {
       hot-sensors = [ "_processor_usage_" "_memory_allocated_" ];
+      position-in-panel = 0;
       show-fan = false;
       show-voltage = false;
       update-time = 1;

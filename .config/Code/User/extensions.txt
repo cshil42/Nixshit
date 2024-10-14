@@ -1,4 +1,5 @@
 42crunch.vscode-openapi
+arcticicestudio.nord-visual-studio-code
 azurite.azurite
 connor4312.esbuild-problem-matchers
 dbaeumer.vscode-eslint
