@@ -128,12 +128,17 @@
     home.stateVersion = "24.05";
   };
 
-  environment.sessionVariables = {
+  environment.sessionVariables = with pkgs; {
     LD_LIBRARY_PATH = lib.makeLibraryPath [
-      pkgs.libglvnd
-      pkgs.pulseaudio
+      libglvnd
+      pulseaudio
     ];
   };
+
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc
+  ];
 
   programs.java = { 
     enable = true; 
