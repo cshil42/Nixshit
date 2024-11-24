@@ -6,8 +6,8 @@
     "terminal.integrated.defaultProfile.linux": "fish",
     "workbench.colorTheme": "Nord Deep",
     "git.openRepositoryInParentFolders": "always",
-    "java.import.gradle.java.home": "/nix/store/5zij17yckck93248rb2grkpm1y3dzy1f-openjdk-21.0.3+9/lib/openjdk",
-    "java.jdt.ls.java.home": "/nix/store/5zij17yckck93248rb2grkpm1y3dzy1f-openjdk-21.0.3+9/lib/openjdk",
+    "java.import.gradle.java.home": "/run/current-system/sw/lib/openjdk/",
+    "java.jdt.ls.java.home": "/run/current-system/sw/lib/openjdk/",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
