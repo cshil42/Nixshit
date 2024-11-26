@@ -65,7 +65,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "org-gnome-console" "code" "firefox" "org-gnome-nautilus" "teams-for-linux" "discord" "dolphin-emu" "slack" "steam" "net-lutris-lutris" ];
+      application-children = [ "org-gnome-console" "code" "firefox" "org-gnome-nautilus" "teams-for-linux" "discord" "dolphin-emu" "slack" "steam" "net-lutris-lutris" "gnome-power-panel" ];
       show-banners = true;
     };
 
@@ -117,6 +117,10 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Epiphany.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/org-gnome-fileroller" = {
+      application-id = "org.gnome.FileRoller.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/org-gnome-nautilus" = {
       application-id = "org.gnome.Nautilus.desktop";
     };
@@ -141,8 +145,11 @@ with lib.hm.gvariant;
       application-id = "teams-for-linux.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/virtualbox" = {
+      application-id = "virtualbox.desktop";
+    };
+
     "org/gnome/desktop/peripherals/keyboard" = {
-      numlock-state = true;
       repeat = true;
     };
 
