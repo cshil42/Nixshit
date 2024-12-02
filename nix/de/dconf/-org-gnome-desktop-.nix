@@ -65,7 +65,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "org-gnome-console" "code" "firefox" "org-gnome-nautilus" "teams-for-linux" "discord" "dolphin-emu" "slack" "steam" "net-lutris-lutris" "gnome-power-panel" ];
+      application-children = [ "org-gnome-console" "code" "firefox" "org-gnome-nautilus" "teams-for-linux" "discord" "dolphin-emu" "slack" "steam" "net-lutris-lutris" "gnome-power-panel" "org-gnome-totem" "idea-community" ];
       show-banners = true;
     };
 
@@ -95,6 +95,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/gnome-system-monitor" = {
       application-id = "gnome-system-monitor.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/idea-community" = {
+      application-id = "idea-community.desktop";
     };
 
     "org/gnome/desktop/notifications/application/net-lutris-lutris" = {
@@ -127,6 +131,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/org-gnome-settings" = {
       application-id = "org.gnome.Settings.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-totem" = {
+      application-id = "org.gnome.Totem.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-prismlauncher-prismlauncher" = {
