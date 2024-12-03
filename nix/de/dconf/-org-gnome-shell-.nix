@@ -21,7 +21,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ "firefox.desktop:1" "discord.desktop:1" "slack.desktop:1" "code.desktop:2" "teams-for-linux.desktop:1" "steam.desktop:3" ];
+      application-list = [ "firefox.desktop:1" "discord.desktop:1" "slack.desktop:1" "code.desktop:2" "idea-community.desktop:2" "teams-for-linux.desktop:1" "steam.desktop:3" ];
     };
 
     "org/gnome/shell/extensions/custom-accent-colors" = {
