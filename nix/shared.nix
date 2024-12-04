@@ -102,7 +102,7 @@
       firefox
     #  thunderbird
       vscode
-      jetbrains.idea-community
+      jetbrains.idea-ultimate
       discord
       keepassxc
       slack

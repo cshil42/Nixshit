@@ -65,7 +65,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "org-gnome-console" "code" "firefox" "org-gnome-nautilus" "teams-for-linux" "discord" "dolphin-emu" "slack" "steam" "net-lutris-lutris" "gnome-power-panel" "org-gnome-totem" "idea-community" ];
+      application-children = [ "org-gnome-console" "code" "firefox" "org-gnome-nautilus" "teams-for-linux" "discord" "dolphin-emu" "slack" "steam" "net-lutris-lutris" "gnome-power-panel" "org-gnome-totem" "idea-ultimate" ];
       show-banners = true;
     };
 
@@ -97,8 +97,8 @@ with lib.hm.gvariant;
       application-id = "gnome-system-monitor.desktop";
     };
 
-    "org/gnome/desktop/notifications/application/idea-community" = {
-      application-id = "idea-community.desktop";
+    "org/gnome/desktop/notifications/application/idea-ultimate" = {
+      application-id = "idea-ultimate.desktop";
     };
 
     "org/gnome/desktop/notifications/application/net-lutris-lutris" = {
