@@ -1,9 +1,9 @@
 [submodule "Colloid-gtk-theme"]
 	path = Colloid-gtk-theme
 	url = https://github.com/vinceliuice/Colloid-gtk-theme.git
-[submodule "Nordzy-icon"]
-	path = Nordzy-icon
-	url = https://github.com/alvatip/Nordzy-icon.git
+[submodule "Colloid-icon-theme"]
+	path = Colloid-icon-theme
+	url = https://github.com/vinceliuice/Colloid-icon-theme.git
 [submodule "Future-cursors"]
 	path = Future-cursors
 	url = https://github.com/aedans/Future-cursors.git

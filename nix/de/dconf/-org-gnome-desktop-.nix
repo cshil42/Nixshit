@@ -57,7 +57,7 @@ with lib.hm.gvariant;
       font-name = "Noto Sans,  10";
       gtk-enable-primary-paste = true;
       gtk-theme = "shell-Dark-Nord";
-      icon-theme = "Nordzy-dark";
+      icon-theme = "Colloid-Nord-Dark";
       scaling-factor = mkUint32 1;
       text-scaling-factor = 1.0;
       toolbar-style = "text";
