@@ -51,11 +51,7 @@
   };
 
   # Enable OpenGL
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
+  hardware.graphics.enable = true;
 
   programs.steam = {
     enable = true;
@@ -73,7 +69,6 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -108,7 +103,6 @@
       slack
       git
       gh
-      azure-functions-core-tools
       commitizen
       azure-cli
       terraform
