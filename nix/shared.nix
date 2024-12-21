@@ -86,6 +86,10 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-sdk-wrapped-6.0.428"
+    "dotnet-sdk-6.0.428"
+  ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.hans = {
@@ -114,6 +118,8 @@
       jdk21
       libreoffice
       dolphin-emu
+      azure-functions-core-tools
+      postman
     ];
   };
 

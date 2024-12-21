@@ -9,3 +9,5 @@
 	helper = !/etc/profiles/per-user/hans/bin/gh auth git-credential
 [pull]
 	rebase = false
+[core]
+	autocrlf = input
