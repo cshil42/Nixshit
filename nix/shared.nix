@@ -120,6 +120,7 @@
       dolphin-emu
       azure-functions-core-tools
       postman
+      icu
     ];
   };
 
@@ -139,6 +140,7 @@
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc
+    icu
   ];
 
   programs.java = { 
