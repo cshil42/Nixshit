@@ -4,7 +4,7 @@
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
       <home-manager/nixos> 
-      ./de/gnome.nix
+      ./de/kde.nix
     ];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
