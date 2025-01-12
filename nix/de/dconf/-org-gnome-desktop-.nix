@@ -163,6 +163,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/peripherals/mouse" = {
       accel-profile = "flat";
+      speed = 0.3;
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
