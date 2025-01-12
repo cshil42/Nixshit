@@ -101,9 +101,16 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/vitals" = {
-      hot-sensors = [ "_processor_usage_" "_memory_allocated_" ];
+      fixed-widths = true;
+      hide-icons = true;
+      hide-zeros = false;
+      hot-sensors = [ "_memory_allocated_" "_processor_frequency_" "_processor_usage_" ];
+      icon-style = 0;
+      menu-centered = false;
       position-in-panel = 0;
+      show-battery = false;
       show-fan = false;
+      show-memory = true;
       show-system = true;
       show-voltage = false;
       update-time = 1;
