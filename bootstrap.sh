@@ -7,6 +7,10 @@ if [[ $# -eq 0 ]] ; then
   exit 0
 fi
 
+nix-shell -p sassc --command "bash ./Colloid-gtk-theme/install.sh --tweaks nord -l -c dark"
+bash ./Colloid-icon-theme/install.sh --scheme nord
+(cd Future-cursors; bash install.sh)
+
 sudo rm -f /etc/nixos/configuration.nix
 sudo ln -s /home/hans/.dotfiles/config/$1.nix /etc/nixos/configuration.nix 
 
@@ -16,10 +20,6 @@ nix-shell -p stow --command "stow . --no-folding"
 
 npm set prefix ~/.npm-global
 npm i -g @commitlint/config-conventional
-
-nix-shell -p sassc --command "bash ./Colloid-gtk-theme/install.sh --tweaks nord -l -c dark"
-bash ./Colloid-icon-theme/install.sh --scheme nord 
-(cd Future-cursors; bash install.sh) 
 
 while read in; do
   echo Installing vscode extension $in
