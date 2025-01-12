@@ -9,6 +9,7 @@ with lib.hm.gvariant;
       attach-modal-dialogs = false;
       center-new-windows = true;
       edge-tiling = true;
+      experimental-features = [ "scale-monitor-framebuffer" ];
     };
 
   };

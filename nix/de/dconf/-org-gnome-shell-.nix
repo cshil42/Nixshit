@@ -17,6 +17,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/appindicator" = {
+      icon-size = 20;
       tray-pos = "right";
     };
 
@@ -39,7 +40,7 @@ with lib.hm.gvariant;
       custom-background-color = true;
       custom-theme-customize-running-dots = false;
       custom-theme-shrink = false;
-      dash-max-icon-size = 48;
+      dash-max-icon-size = 64;
       disable-overview-on-startup = false;
       dock-position = "BOTTOM";
       extend-height = false;
@@ -74,8 +75,10 @@ with lib.hm.gvariant;
       controls-manager-spacing-size = 0;
       dash-app-running = true;
       panel = true;
+      panel-icon-size = 24;
       panel-in-overview = true;
       panel-notification-icon = true;
+      panel-size = 36;
       power-icon = true;
       show-apps-button = true;
       switcher-popup-delay = true;

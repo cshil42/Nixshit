@@ -48,7 +48,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      cursor-size = 24;
+      cursor-size = 32;
       cursor-theme = "Future-cursors";
       enable-animations = true;
       enable-hot-corners = true;
@@ -59,7 +59,7 @@ with lib.hm.gvariant;
       gtk-theme = "shell-Dark-Nord";
       icon-theme = "Colloid-Nord-Dark";
       scaling-factor = mkUint32 1;
-      text-scaling-factor = 1.0;
+      text-scaling-factor = 1.25;
       toolbar-style = "text";
       toolkit-accessibility = false;
     };
@@ -192,6 +192,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/sound" = {
       allow-volume-above-100-percent = true;
+      theme-name = "ocean";
     };
 
     "org/gnome/desktop/wm/keybindings" = {
