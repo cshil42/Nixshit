@@ -121,6 +121,7 @@
       azure-functions-core-tools
       postman
       icu
+      pavucontrol
     ];
   };
 
