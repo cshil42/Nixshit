@@ -25,3 +25,10 @@ while read in; do
   echo Installing vscode extension $in
   code --install-extension $in
 done < /home/hans/.dotfiles/.config/Code/User/extensions.txt
+
+nix-shell -p unzip --command "unzip /home/hans/.dotfiles/.config/JetBrains/settings.zip -o -d /home/hans/.config/JetBrains/settings"
+
+while read in; do
+  echo Installing idea extension $in
+  idea-ultimate installPlugins $in
+done <  /home/hans/.config/JetBrains/settings/installed.txt
