@@ -6,5 +6,6 @@
 ^/.gitmodules
 ^/bootstrap.sh
 ^/dump-dconf.sh
+^/dump-kde.sh
 ^/dump-vscode.sh
 ^/README.md
