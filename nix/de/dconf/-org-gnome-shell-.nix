@@ -105,7 +105,7 @@ with lib.hm.gvariant;
       fixed-widths = true;
       hide-icons = true;
       hide-zeros = false;
-      hot-sensors = [ "_memory_allocated_" "_processor_frequency_" "_processor_usage_" ];
+      hot-sensors = [ "_processor_usage_" "_memory_allocated_" ];
       icon-style = 0;
       menu-centered = false;
       position-in-panel = 0;
