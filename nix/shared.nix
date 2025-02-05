@@ -22,8 +22,14 @@
 
   virtualisation.docker.enable = true;
 
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "hans" ];
+  virtualisation.vmware.host.enable = true;
+
+  # virtualisation.virtualbox.host.enable = true;
+  # virtualisation.virtualbox.host.addNetworkInterface = false;
+  # users.extraGroups.vboxusers.members = [ "hans" ];
+
+  # boot.kernelPackages = pkgs.linuxPackages_6_12;
+  # boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
@@ -208,6 +214,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 
 }
