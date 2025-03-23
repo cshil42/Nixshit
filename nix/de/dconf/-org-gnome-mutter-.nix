@@ -12,5 +12,9 @@ with lib.hm.gvariant;
       experimental-features = [ "scale-monitor-framebuffer" ];
     };
 
+    "org/gnome/mutter/wayland" = {
+      xwayland-disable-extension = [ "Xtest" ];
+    };
+
   };
 }
