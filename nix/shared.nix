@@ -128,6 +128,7 @@
       postman
       icu
       pavucontrol
+      lsof
     ];
   };
 
