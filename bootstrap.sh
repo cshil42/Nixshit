@@ -11,10 +11,7 @@ nix-shell -p sassc --command "bash ./Colloid-gtk-theme/install.sh --tweaks nord 
 bash ./Colloid-icon-theme/install.sh --scheme nord
 (cd Future-cursors; bash install.sh)
 
-sudo rm -f /etc/nixos/configuration.nix
-sudo ln -s /home/hans/.dotfiles/config/$1.nix /etc/nixos/configuration.nix 
-
-sudo nixos-rebuild switch
+sudo nixos-rebuild switch --flake .#$1 --impure
 
 nix-shell -p stow --command "stow . --no-folding"
 

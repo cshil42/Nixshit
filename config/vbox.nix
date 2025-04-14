@@ -4,5 +4,5 @@
     /home/hans/.dotfiles/nix/boot/grub.nix
   ];
 
-  networking.hostName = "nixos";
+  networking.hostName = "vbox";
 }

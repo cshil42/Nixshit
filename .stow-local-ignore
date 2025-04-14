@@ -3,7 +3,6 @@
 ^/config
 ^/Future-cursors
 ^/nix
-^/Nordzy-icon
 ^/.git
 ^/.gitconfig
 ^/.gitmodules
@@ -12,4 +11,6 @@
 ^/dump-dconf.sh
 ^/dump-kde.sh
 ^/dump-vscode.sh
+^/flake.lock
+^/flake.nix
 ^/README.md

@@ -28,7 +28,7 @@
   virtualisation.virtualbox.host.addNetworkInterface = false;
   users.extraGroups.vboxusers.members = [ "hans" ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
   # boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
   # Set your time zone.
