@@ -28,7 +28,7 @@
   virtualisation.virtualbox.host.addNetworkInterface = false;
   users.extraGroups.vboxusers.members = [ "hans" ];
 
-  # boot.kernelPackages = pkgs.linuxPackages_6_12;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   # boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
   # Set your time zone.
@@ -107,7 +107,7 @@
       firefox
     #  thunderbird
       vscode
-      jetbrains.idea-ultimate
+      jetbrains.idea-community
       discord
       keepassxc
       slack
@@ -129,6 +129,7 @@
       icu
       pavucontrol
       lsof
+      ollama
     ];
   };
 

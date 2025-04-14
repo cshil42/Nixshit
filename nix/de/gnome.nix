@@ -13,7 +13,7 @@
     gnome-tour
     gnome-console
     epiphany    # web browser
-    geary       # email client
+    # geary       # email client
     seahorse    # password manager
   ]);
 

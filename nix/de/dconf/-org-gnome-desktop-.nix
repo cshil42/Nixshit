@@ -145,6 +145,10 @@ with lib.hm.gvariant;
       application-id = "slack.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/startcenter" = {
+      application-id = "startcenter.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/steam" = {
       application-id = "steam.desktop";
     };

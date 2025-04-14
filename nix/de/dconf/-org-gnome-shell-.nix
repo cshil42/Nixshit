@@ -84,6 +84,8 @@ with lib.hm.gvariant;
       panel-size = 36;
       power-icon = true;
       show-apps-button = true;
+      support-notifier-showed-version = 34;
+      support-notifier-type = 0;
       switcher-popup-delay = true;
       theme = false;
       window-maximized-on-create = false;
@@ -102,11 +104,13 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/vitals" = {
+      alphabetize = true;
       fixed-widths = true;
       hide-icons = true;
       hide-zeros = false;
       hot-sensors = [ "_processor_usage_" "_memory_allocated_" ];
       icon-style = 0;
+      include-static-info = false;
       menu-centered = false;
       position-in-panel = 0;
       show-battery = false;
