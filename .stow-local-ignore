@@ -1,10 +1,13 @@
 ^/Colloid-gtk-theme
 ^/Colloid-icon-theme
-^/Nordzy-icon
+^/config
 ^/Future-cursors
 ^/nix
-^/config
+^/Nordzy-icon
+^/.git
+^/.gitconfig
 ^/.gitmodules
+^/.stow-local-ignore
 ^/bootstrap.sh
 ^/dump-dconf.sh
 ^/dump-kde.sh

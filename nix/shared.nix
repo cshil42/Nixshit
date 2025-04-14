@@ -22,11 +22,11 @@
 
   virtualisation.docker.enable = true;
 
-  virtualisation.vmware.host.enable = true;
+  # virtualisation.vmware.host.enable = true;
 
-  # virtualisation.virtualbox.host.enable = true;
-  # virtualisation.virtualbox.host.addNetworkInterface = false;
-  # users.extraGroups.vboxusers.members = [ "hans" ];
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.addNetworkInterface = false;
+  users.extraGroups.vboxusers.members = [ "hans" ];
 
   # boot.kernelPackages = pkgs.linuxPackages_6_12;
   # boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
