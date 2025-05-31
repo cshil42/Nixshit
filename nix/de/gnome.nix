@@ -17,7 +17,7 @@
     seahorse    # password manager
   ]);
 
-  users.users.hans.packages = with pkgs; [
+  users.users.connor.packages = with pkgs; [
     gnome-terminal
     gnome-tweaks
     gnomeExtensions.just-perfection
@@ -26,7 +26,7 @@
     gnomeExtensions.appindicator
   ];
 
-  home-manager.users.hans = {
+  home-manager.users.connor = {
     dconf.enable = true;
 
     imports = [

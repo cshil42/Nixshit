@@ -1,7 +1,7 @@
 {
   imports = [ 
-    /home/hans/.dotfiles/nix/shared.nix
-    /home/hans/.dotfiles/nix/boot/systemd.nix
+    /home/connor/.dotfiles/nix/shared.nix
+    /home/connor/.dotfiles/nix/boot/systemd.nix
   ];
 
   networking.hostName = "framework";

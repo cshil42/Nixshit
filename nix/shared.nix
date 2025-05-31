@@ -4,8 +4,10 @@
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
       <home-manager/nixos> 
-      ./de/gnome.nix
+      ./de/cinnamon.nix
     ];
+
+  boot.kernelParams = ["amdgpu.dcdebugmask=0x10""amdgpu.ppfeaturemask=0xfff73fff""kvm.enable_virt_at_load=0"];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
 
@@ -20,15 +22,15 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  virtualisation.docker.enable = true;
+  #virtualisation.docker.enable = true;
 
   # virtualisation.vmware.host.enable = true;
 
   virtualisation.virtualbox.host.enable = true;
   virtualisation.virtualbox.host.addNetworkInterface = false;
-  users.extraGroups.vboxusers.members = [ "hans" ];
+  users.extraGroups.vboxusers.members = [ "connor" ];
 
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   # boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
   # Set your time zone.
@@ -51,19 +53,24 @@
 
   services.syncthing = {
     enable = true;
-    user = "hans";
-    dataDir = "/home/hans/Sync";    # Default folder for new synced folders
-    configDir = "/home/hans/.config/syncthing";   # Folder for Syncthing's settings and keys
+    user = "connor";
+    dataDir = "/home/connor/Sync";    # Default folder for new synced folders
+    configDir = "/home/connor/.config/syncthing";   # Folder for Syncthing's settings and keys
   };
 
   # Enable OpenGL
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
 
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
+  
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -98,42 +105,47 @@
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.hans = {
+  users.users.connor = {
     isNormalUser = true;
-    description = "Hans";
+    description = "connor";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.fish;
     packages = with pkgs; [
+      r2modman
+      nvtopPackages.full
       firefox
+      spotify
     #  thunderbird
       vscode
-      jetbrains.idea-community
       discord
       keepassxc
-      slack
       git
-      gh
-      commitizen
-      azure-cli
-      terraform
       python3
-      teams-for-linux
       lutris
       prismlauncher
       lynx
       jdk21
-      libreoffice
       dolphin-emu
-      azure-functions-core-tools
-      postman
-      icu
       pavucontrol
-      lsof
-      ollama
+      lact
+      protonup-qt
     ];
   };
 
-  home-manager.users.hans = {
+  hardware.openrazer.enable = true;
+  hardware.openrazer.users = ["connor"];
+
+  systemd.services.lact = {
+    description = "AMDGPU Control Daemon";
+    after = ["multi-user.target"];
+    wantedBy = ["multi-user.target"];
+    serviceConfig = {
+      ExecStart = "${pkgs.lact}/bin/lact daemon";
+    };
+    enable = true;
+  };
+
+  home-manager.users.connor = {
     # The state version is required and should stay at the version you
     # originally installed.
     home.stateVersion = "24.11";
@@ -149,7 +161,6 @@
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc
-    icu
   ];
 
   programs.java = { 
@@ -183,6 +194,8 @@
     wineWowPackages.stable
     winetricks
     rclone
+    polychromatic
+    input-remapper
   ];
 
   nix.gc = {
@@ -202,7 +215,8 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
+  networking.firewall.allowedTCPPorts = [22];
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

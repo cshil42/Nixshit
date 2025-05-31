@@ -1,9 +1,6 @@
 { ... }:
 {
-  home-manager.users.hans = {
-    imports = [
-      <plasma-manager/modules>
-      ./kde/rc.nix
-    ];
-  };
+  services.xserver.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
 }

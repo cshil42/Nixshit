@@ -265,8 +265,8 @@
       "kdeglobals"."WM"."inactiveForeground" = "161,169,177";
       "kscreenlockerrc"."Daemon"."Autolock" = false;
       "kscreenlockerrc"."Daemon"."Timeout" = 0;
-      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."Image" = "/home/hans/.dotfiles/.config/background";
-      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."PreviewImage" = "/home/hans/.dotfiles/.config/background";
+      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."Image" = "/home/connor/.dotfiles/.config/background";
+      "kscreenlockerrc"."Greeter/Wallpaper/org.kde.image/General"."PreviewImage" = "/home/connor/.dotfiles/.config/background";
       "kwalletrc"."Wallet"."First Use" = false;
       "kwinrc"."Desktops"."Id_1" = "b056fea4-d5d1-40b1-8e38-bca271a703eb";
       "kwinrc"."Desktops"."Number" = 1;

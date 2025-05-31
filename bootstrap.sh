@@ -21,4 +21,4 @@ npm i -g @commitlint/config-conventional
 while read in; do
   echo Installing vscode extension $in
   code --install-extension $in
-done < /home/hans/.dotfiles/.config/Code/User/extensions.txt
+done < /home/connor/.dotfiles/.config/Code/User/extensions.txt

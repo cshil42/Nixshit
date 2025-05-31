@@ -35,8 +35,8 @@ with lib.hm.gvariant;
     "org/gnome/desktop/background" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri = "file:///home/hans/.config/background";
-      picture-uri-dark = "file:///home/hans/.config/background";
+      picture-uri = "file:///home/connor/.config/background";
+      picture-uri-dark = "file:///home/connor/.config/background";
       primary-color = "#3a4ba0";
       secondary-color = "#2f302f";
     };
@@ -47,11 +47,12 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/interface" = {
+      accent-color = "red";
       color-scheme = "prefer-dark";
-      cursor-size = 32;
+      cursor-size = 24;
       cursor-theme = "Future-cursors";
       enable-animations = true;
-      enable-hot-corners = true;
+      enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
       font-name = "Noto Sans,  10";
@@ -59,7 +60,6 @@ with lib.hm.gvariant;
       gtk-theme = "shell-Dark-Nord";
       icon-theme = "Colloid-Nord-Dark";
       scaling-factor = mkUint32 1;
-      text-scaling-factor = 1.25;
       toolbar-style = "text";
       toolkit-accessibility = false;
     };
@@ -220,6 +220,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/wm/preferences" = {
       button-layout = "appmenu:minimize,maximize,close";
+      num-workspaces = 1;
       theme = "Nordic";
     };
 
