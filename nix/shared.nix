@@ -2,8 +2,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      /etc/nixos/hardware-configuration.nix
-      <home-manager/nixos> 
+      /etc/nixos/hardware-configuration.nix 
       ./de/cinnamon.nix
     ];
 
@@ -155,12 +154,6 @@
       ExecStart = "${pkgs.lact}/bin/lact daemon";
     };
     enable = true;
-  };
-
-  home-manager.users.connor = {
-    # The state version is required and should stay at the version you
-    # originally installed.
-    home.stateVersion = "24.11";
   };
 
   environment.sessionVariables = with pkgs; {
