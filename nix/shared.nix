@@ -20,7 +20,16 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
-  networking.networkmanager.enable = true;
+  networking = {
+    networkmanager.enable = true;
+    firewall = {
+      # enable = false;
+      allowedTCPPorts = [ 
+        # Minecraft
+        25565 
+      ];
+    };
+  };
 
   #virtualisation.docker.enable = true;
 
@@ -129,6 +138,9 @@
       pavucontrol
       lact
       protonup-qt
+      lmms
+      openmw
+      zoom-us
     ];
   };
 
@@ -215,8 +227,8 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-  networking.firewall.allowedTCPPorts = [22];
+  # services.openssh.enable = true;
+  # networking.firewall.allowedTCPPorts = [22];
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
