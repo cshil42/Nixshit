@@ -1,9 +1,9 @@
 {
-  imports = [ 
-    /home/connor/.dotfiles/nix/shared.nix
-    /home/connor/.dotfiles/nix/boot/systemd.nix
-    /home/connor/.dotfiles/nix/gpu/nvidia.nix
-    # /home/connor/.dotfiles/nix/backup/usb.nix
+  imports = [
+    ../nix/shared.nix
+    ../nix/boot/systemd.nix
+    ../nix/gpu/nvidia.nix
+    # ../nix/backup/usb.nix
   ];
 
   networking.hostName = "Purple";

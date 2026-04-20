@@ -2,9 +2,10 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      /etc/nixos/hardware-configuration.nix 
+      /etc/nixos/hardware-configuration.nix
       ./de/cinnamon.nix
     ];
+
 
   boot.kernelParams = ["amdgpu.dcdebugmask=0x10""amdgpu.ppfeaturemask=0xfff73fff""kvm.enable_virt_at_load=0"];
 
@@ -140,6 +141,7 @@
       lmms
       openmw
       zoom-us
+      claude-code
     ];
   };
 
@@ -196,7 +198,7 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
     nodejs
-    wineWowPackages.stable
+    wineWow64Packages.stable
     winetricks
     rclone
     polychromatic
