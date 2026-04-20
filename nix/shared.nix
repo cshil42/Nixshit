@@ -3,9 +3,9 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
-      <home-manager/nixos> 
       ./de/cinnamon.nix
     ];
+
 
   boot.kernelParams = ["amdgpu.dcdebugmask=0x10""amdgpu.ppfeaturemask=0xfff73fff""kvm.enable_virt_at_load=0"];
 
@@ -129,6 +129,7 @@
       pavucontrol
       lact
       protonup-qt
+      claude-code
     ];
   };
 
@@ -143,12 +144,6 @@
       ExecStart = "${pkgs.lact}/bin/lact daemon";
     };
     enable = true;
-  };
-
-  home-manager.users.connor = {
-    # The state version is required and should stay at the version you
-    # originally installed.
-    home.stateVersion = "24.11";
   };
 
   environment.sessionVariables = with pkgs; {
@@ -191,7 +186,7 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
     nodejs
-    wineWowPackages.stable
+    wineWow64Packages.stable
     winetricks
     rclone
     polychromatic
