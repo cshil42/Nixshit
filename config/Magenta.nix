@@ -16,4 +16,7 @@
 
   # No VirtualBox on this machine
   virtualisation.virtualbox.host.enable = lib.mkForce false;
+
+  # Gamemode boosts CPU governor to performance while gaming — helps iGPU-heavy games
+  programs.gamemode.enable = true;
 }
