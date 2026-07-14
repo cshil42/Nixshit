@@ -92,7 +92,7 @@
 
   # Enable sound with pipewire.
   # hardware.pulseaudio.enable = true;
-  #security.rtkit.enable = true;
+  security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -191,7 +191,7 @@
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
 
-  system.autoUpgrade.enable = true;
+  system.autoUpgrade.enable = false;
   # system.autoUpgrade.allowReboot = true;
 
   # Allow unfree packages
