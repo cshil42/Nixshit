@@ -122,7 +122,7 @@
   users.users.connor = {
     isNormalUser = true;
     description = "connor";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "openrazer" ];
     shell = pkgs.fish;
     packages = with pkgs; [
       r2modman
@@ -147,11 +147,17 @@
       openmw
       zoom-us
       claude-code
+      wowup-cf
     ];
   };
 
   hardware.openrazer.enable = true;
   hardware.openrazer.users = ["connor"];
+
+  services.input-remapper = {
+    enable = true;
+    enableUdevRules = true;
+  };
 
   systemd.services.lact = {
     description = "AMDGPU Control Daemon";
@@ -191,7 +197,26 @@
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
 
-  system.autoUpgrade.enable = true;
+  # Let root (nixos-rebuild / nixos-upgrade.service) read the dotfiles flake,
+  # which is a git repo owned by connor.
+  programs.git = {
+    enable = true;
+    config.safe.directory = [ "/home/connor/.dotfiles" ];
+  };
+
+  system.autoUpgrade = {
+    enable = true;
+    flake = "/home/connor/.dotfiles#${config.networking.hostName}";
+    # Re-resolve nixpkgs-claude to the latest nixos-unstable on every run
+    # (without touching flake.lock), so claude-code updates automatically.
+    # --impure is needed for the /etc/nixos/hardware-configuration.nix import.
+    flags = [
+      "--impure"
+      "--override-input" "nixpkgs-claude" "github:NixOS/nixpkgs/nixos-unstable"
+      "--no-write-lock-file"
+    ];
+    dates = "daily";
+  };
   # system.autoUpgrade.allowReboot = true;
 
   # Allow unfree packages
@@ -202,6 +227,7 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+    openrazer-daemon
     nodejs
     wineWow64Packages.stable
     winetricks
